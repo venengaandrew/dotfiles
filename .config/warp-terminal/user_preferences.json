@@ -1,6 +1,17 @@
 {
   "prefs": {
+    "OpenFileEditor": "\"VSCode\"",
+    "ChangelogVersions": "{\"v0.2024.02.20.08.01.stable_01\":true,\"v0.2024.02.20.08.01.stable_02\":true}",
+    "ExperimentId": "bb3be071-0102-4d90-a95d-5712688bbd61",
+    "SystemTheme": "false",
+    "HasAutoOpenedWelcomeFolder": "true",
+    "WelcomeTipsFeaturesUsed": "[{\"Hint\":\"BlockSelect\"},{\"Hint\":\"BlockAction\"},{\"Action\":\"WarpAI\"},{\"Action\":\"ThemePicker\"},{\"Action\":\"CommandPalette\"},{\"Action\":\"CommandSearch\"},{\"Action\":\"OpenWarpDrive\"},{\"Hint\":\"CreateBlock\"}]",
+    "AutosuggestionAcceptedCount": "2",
+    "ReceivedReferralTheme": "\"Inactive\"",
+    "Theme": "\"CyberWave\"",
     "Shortcuts": "true",
-    "ExperimentId": "dc37a825-bda6-4850-b9f5-ee956bcb164f"
+    "FontSize": "21.0",
+    "AIAssistantRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":0,\"next_refresh_time\":\"2024-02-24T03:47:41.986476Z\"}",
+    "HasDismissedWarpDriveWelcome": "true"
   }
 }
