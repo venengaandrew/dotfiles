@@ -1,17 +1,19 @@
 {
   "prefs": {
-    "OpenFileEditor": "\"VSCode\"",
-    "ChangelogVersions": "{\"v0.2024.02.20.08.01.stable_01\":true,\"v0.2024.02.20.08.01.stable_02\":true}",
+    "AIAssistantRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":6,\"next_refresh_time\":\"2024-03-12T15:29:53.256437Z\"}",
+    "Shortcuts": "true",
     "ExperimentId": "bb3be071-0102-4d90-a95d-5712688bbd61",
-    "SystemTheme": "false",
-    "HasAutoOpenedWelcomeFolder": "true",
-    "WelcomeTipsFeaturesUsed": "[{\"Hint\":\"BlockSelect\"},{\"Hint\":\"BlockAction\"},{\"Action\":\"WarpAI\"},{\"Action\":\"ThemePicker\"},{\"Action\":\"CommandPalette\"},{\"Action\":\"CommandSearch\"},{\"Action\":\"OpenWarpDrive\"},{\"Hint\":\"CreateBlock\"}]",
     "AutosuggestionAcceptedCount": "2",
+    "FontSize": "25.0",
+    "ChangelogVersions": "{\"v0.2024.02.20.08.01.stable_01\":true,\"v0.2024.02.20.08.01.stable_02\":true,\"v0.2024.03.05.08.02.stable_01\":true}",
+    "WorkflowsBoxOpen": "true",
+    "WelcomeTipsFeaturesUsed": "[{\"Hint\":\"BlockSelect\"},{\"Hint\":\"BlockAction\"},{\"Action\":\"WarpAI\"},{\"Action\":\"ThemePicker\"},{\"Action\":\"CommandPalette\"},{\"Action\":\"CommandSearch\"},{\"Action\":\"OpenWarpDrive\"},{\"Hint\":\"CreateBlock\"}]",
     "ReceivedReferralTheme": "\"Inactive\"",
     "Theme": "\"CyberWave\"",
-    "Shortcuts": "true",
-    "FontSize": "21.0",
-    "AIAssistantRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":0,\"next_refresh_time\":\"2024-02-24T03:47:41.986476Z\"}",
-    "HasDismissedWarpDriveWelcome": "true"
+    "EmacsBindingsBannerState": "\"Dismissed\"",
+    "HasDismissedWarpDriveWelcome": "true",
+    "SystemTheme": "false",
+    "OpenFileEditor": "\"VSCode\"",
+    "HasAutoOpenedWelcomeFolder": "true"
   }
 }
