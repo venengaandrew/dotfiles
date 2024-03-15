@@ -1,19 +1,24 @@
 {
   "prefs": {
-    "ChangelogVersions": "{\"v0.2024.02.20.08.01.stable_01\":true,\"v0.2024.02.20.08.01.stable_02\":true,\"v0.2024.03.05.08.02.stable_01\":true,\"v0.2024.03.12.08.02.stable_01\":true}",
-    "AutosuggestionAcceptedCount": "2",
+    "WorkingDirectoryConfig": "{\"advanced_mode\":false,\"global\":{\"mode\":\"HomeDir\",\"custom_dir\":\"\"},\"split_pane\":{\"mode\":\"PreviousDir\",\"custom_dir\":\"\"},\"new_tab\":{\"mode\":\"PreviousDir\",\"custom_dir\":\"\"},\"new_window\":{\"mode\":\"PreviousDir\",\"custom_dir\":\"\"}}",
+    "AliasExpansionBannerSeen": "true",
+    "OpenFileEditor": "\"VSCode\"",
+    "WelcomeTipsFeaturesUsed": "[{\"Action\":\"CommandSearch\"},{\"Action\":\"OpenWarpDrive\"},{\"Action\":\"WarpAI\"},{\"Hint\":\"BlockAction\"},{\"Action\":\"CommandPalette\"},{\"Action\":\"SplitPane\"},{\"Hint\":\"BlockSelect\"},{\"Action\":\"ThemePicker\"},{\"Hint\":\"CreateBlock\"}]",
     "Theme": "\"CyberWave\"",
-    "ExperimentId": "bb3be071-0102-4d90-a95d-5712688bbd61",
     "EmacsBindingsBannerState": "\"Dismissed\"",
-    "SystemTheme": "false",
-    "AIAssistantRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":6,\"next_refresh_time\":\"2024-03-12T15:29:53.256437Z\"}",
     "FontSize": "25.0",
-    "WelcomeTipsFeaturesUsed": "[{\"Hint\":\"BlockSelect\"},{\"Hint\":\"BlockAction\"},{\"Action\":\"WarpAI\"},{\"Action\":\"ThemePicker\"},{\"Action\":\"CommandPalette\"},{\"Action\":\"CommandSearch\"},{\"Action\":\"OpenWarpDrive\"},{\"Hint\":\"CreateBlock\"}]",
-    "HasDismissedWarpDriveWelcome": "true",
-    "Shortcuts": "true",
-    "WorkflowsBoxOpen": "true",
     "ReceivedReferralTheme": "\"Inactive\"",
+    "WelcomeTipsCompleted": "true",
+    "SystemTheme": "false",
+    "AutosuggestionAcceptedCount": "2",
+    "Shortcuts": "true",
+    "ChangelogVersions": "{\"v0.2024.02.20.08.01.stable_01\":true,\"v0.2024.02.20.08.01.stable_02\":true,\"v0.2024.03.05.08.02.stable_01\":true,\"v0.2024.03.12.08.02.stable_01\":true}",
+    "SelectedSystemThemes": "{\"light\":\"Light\",\"dark\":\"CyberWave\"}",
+    "AIAssistantRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":6,\"next_refresh_time\":\"2024-03-12T15:29:53.256437Z\"}",
     "HasAutoOpenedWelcomeFolder": "true",
-    "OpenFileEditor": "\"VSCode\""
+    "WorkflowsBoxOpen": "true",
+    "StartupShellOverride": "\"zsh\"",
+    "HasDismissedWarpDriveWelcome": "true",
+    "ExperimentId": "bb3be071-0102-4d90-a95d-5712688bbd61"
   }
 }
