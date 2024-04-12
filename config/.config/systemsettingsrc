@@ -1,0 +1,11 @@
+[MainWindow]
+1280x720 screen: Height=648
+1280x720 screen: Width=1122
+2 screens: Height=658
+2 screens: Width=1122
+960x540 screen: Height=486
+960x540 screen: Width=864
+MenuBar=Disabled
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAABGIAAAKSAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled

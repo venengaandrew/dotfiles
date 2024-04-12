@@ -1,0 +1,12 @@
+# 
+# Plugin blacklist
+# The plugin providers under blacklist will not run.
+# 
+# Warning: this file is read only on startup.
+# `sudo systemctl restart hhd@$(whoami)`
+# 
+# Available providers:
+# [generic, gpd_win, legion_go, orange_pi, overlay, powerbuttond, rog_ally]
+
+blacklist:
+- myplugin1

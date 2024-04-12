@@ -1,0 +1,15 @@
+[ExtractDialog]
+DirHistory[$e]=$HOME/Downloads/
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[KFileDialog Settings][$i]
+Recent Files[$e]=file:$HOME/Downloads
+Recent URLs[$e]=file:$HOME/Downloads/
+detailViewIconSize=16
+
+[MainWindow]
+StatusBar=Disabled
+ToolBarsMovable=Disabled

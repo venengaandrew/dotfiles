@@ -1,0 +1,7 @@
+2024/04/11-18:40:59.461 4585 Reusing MANIFEST /home/avenenga/.config/chromium/Default/WebStorage/2/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2024/04/11-18:40:59.461 4585 Recovering log #3
+2024/04/11-18:40:59.462 4585 Reusing old log /home/avenenga/.config/chromium/Default/WebStorage/2/IndexedDB/indexeddb.leveldb/000003.log 
+2024/04/11-18:51:02.575 4586 Level-0 table #5: started
+2024/04/11-18:51:02.577 4586 Level-0 table #5: 25254 bytes OK
+2024/04/11-18:51:02.579 4586 Delete type=0 #3
+2024/04/11-18:51:02.580 4586 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

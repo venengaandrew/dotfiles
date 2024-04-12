@@ -1,0 +1,36 @@
+2024-04-12 16:18:34,287 logging         INFO    Handheld Daemon starting...
+2024-04-12 16:18:34,289 utils           INFO    Running under an unknown Linux distro.
+2024-04-12 16:18:34,302 __main__        INFO    Running autodetection...
+2024-04-12 16:18:34,315 __main__        INFO    Found plugin providers: generic, gpd_win, legion_go, orange_pi, overlay, powerbuttond, rog_ally
+2024-04-12 16:18:34,317 __main__        INFO    Loaded the following plugins:
+                                                  -  overlay: overlay
+                                                  - powerbuttond: powerbuttond@'ROG Ally'
+                                                  - rog_ally: rog_ally_controllers
+2024-04-12 16:18:34,344 __main__        INFO    Reloading configuration.
+2024-04-12 16:18:34,376 __main__        INFO    Handheld Daemon Version: 2.5.0
+2024-04-12 16:18:34,377 __main__        INFO    Adjustor not installed
+2024-04-12 16:18:34,378 __main__        INFO    Overlay not installed
+2024-04-12 16:18:34,383 __main__        INFO    No profiles found.
+2024-04-12 16:18:34,383 __main__        INFO    Initialization Complete!
+2024-04-12 16:18:34,398 base            INFO    Launching emulated controller.
+2024-04-12 16:18:34,401 base            INFO    Starting isa keyboard powerbutton handler for device 'ROG Ally'.
+2024-04-12 16:18:34,402 hidraw          INFO    Found device 0b05:1abe:
+                                                'ASUSTeK Computer Inc.': 'N-KEY Device' at b'/dev/hidraw2'
+2024-04-12 16:18:34,405 base            INFO    Waiting for steam to launch.
+2024-04-12 16:18:34,405 base            INFO    Switching Ally Controllers to gamepad mode.
+2024-04-12 16:18:34,469 __init__        INFO    Starting 'Sony Interactive Entertainment DualSense Edge Wireless Controller'.
+2024-04-12 16:18:34,470 base            INFO    Emulated controller launched, have fun!
+2024-04-12 16:18:35,907 base            INFO    Steam is running, hooking power button.
+2024-04-12 16:18:35,908 base            INFO    Captured power button 'Power Button': 'PNP0C0C/button/input0'
+2024-04-12 16:18:35,995 base            INFO    Captured hold keyboard 'AT Translated Set 2 keyboard': 'isa0060/serio0/input0'
+2024-04-12 16:18:40,177 __init__        INFO    Changing leds to RGB: 0 255 255
+2024-04-12 16:18:42,911 __init__        INFO    Changing leds to RGB: 0 255 255
+2024-04-12 16:18:42,919 __init__        INFO    Changing leds to RGB: 0 255 255
+2024-04-12 16:18:42,949 __init__        INFO    Changing leds to RGB: 0 255 255
+2024-04-12 16:18:42,959 __init__        INFO    Changing leds to RGB: 0 255 255
+2024-04-12 16:18:43,437 __init__        INFO    Changing leds to RGB: 0 255 255
+2024-04-12 16:18:43,447 __init__        INFO    Changing leds to RGB: 0 255 255
+2024-04-12 16:18:43,457 __init__        INFO    Changing leds to RGB: 0 255 255
+2024-04-12 16:18:43,495 __init__        INFO    Changing leds to RGB: 0 255 255
+2024-04-12 16:18:43,505 __init__        INFO    Changing leds to RGB: 0 255 255
+2024-04-12 16:18:43,515 __init__        INFO    Changing leds to RGB: 0 255 255

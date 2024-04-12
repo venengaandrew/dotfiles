@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "enable": false,
+  "interpolate": true,
+  "curve": [],
+  "fan_bounds": {
+    "min": 0.0,
+    "max": 7000.0
+  },
+  "temperature_bounds": {
+    "min": 0.0,
+    "max": 100.0
+  }
+}
