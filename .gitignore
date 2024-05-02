@@ -1,1 +1,5 @@
-./.oh-my-zsh/.github/
+config/.config/Code
+config/.config/google-chrome
+config/.config/GitKraken
+
+config/.config/dconf/
