@@ -28,6 +28,10 @@ local plugins = {
       require "configs.lspconfig"
       require "custom.configs.lspconfig"
     end,
+  },
+  {
+    "wakatime/vim-wakatime",
+    lazy = false
   }
 }
 return plugins
