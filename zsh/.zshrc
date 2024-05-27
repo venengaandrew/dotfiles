@@ -83,7 +83,9 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
 
-alias spower="system76-power"
+alias ls='ls --color'
+alias spower='system76-power'
+alias c='clear'
 
 # Shell integrations
 eval "$(fzf --zsh)"
