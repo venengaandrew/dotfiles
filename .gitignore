@@ -3,3 +3,6 @@ config/.config/google-chrome
 config/.config/GitKraken
 
 config/.config/dconf/
+config/.config/tmux/plugins
+
+tmux/.tmux/plugins
