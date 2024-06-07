@@ -1,6 +1,8 @@
 config/.config/Code
 config/.config/google-chrome
 config/.config/GitKraken
+config/.config/gh/hosts.yml
+config/.config/neofetch/
 
 config/.config/dconf/
 config/.config/tmux/plugins
