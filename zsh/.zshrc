@@ -43,8 +43,9 @@ autoload -Uz compinit && compinit
 zinit cdreplay -q
 
 # Init oh-my-posh MACOS VERSION!
-#if [ "$TERM_PROGRAM" ]
-eval "$(oh-my-posh init zsh )"
+if [ "$TERM_PROGRAM" ]; then
+  eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/av-config.toml )"
+fi
 
 # Keybindings
 bindkey -e
@@ -72,13 +73,14 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completio
 
 export ANDROID_HOME=$HOME/android-sdk
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
+export PATH=$HOME/development/flutter/bin/:$PATH
 
 #eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
@@ -88,6 +90,8 @@ complete -o nospace -C /usr/bin/terraform terraform
 alias ls='ls --color'
 alias spower='system76-power'
 alias c='clear'
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
 
 # Shell integrations
 eval "$(fzf --zsh)"

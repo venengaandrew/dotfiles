@@ -155,7 +155,7 @@ final_space = true
   [[blocks.segments]]
     type = 'text'
     style = 'diamond'
-    foreground = '#E64747'
+    foreground = '#3377FF'
     background = '#29315A'
     leading_diamond = ''
     trailing_diamond = ''
