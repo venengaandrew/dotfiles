@@ -1,0 +1,83 @@
+2024-07-05 18:29:27,529 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2024-07-05 18:29:27,533 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'disable']
+2024-07-05 18:29:27,534 DEBUG    root            Running [gcloud.services.disable] with arguments: [--force: "True", SERVICE:1: "['compute.googleapis.com']"]
+2024-07-05 18:29:27,561 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-07-05 18:29:28,292 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/crawler-storage-core/services/compute.googleapis.com:disable?alt=json HTTP/1.1" 200 None
+2024-07-05 18:29:28,300 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-07-05 18:29:28,597 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p17-266629715507-f6d5b1fd-ca87-409d-ba2c-d6db2783aec3?alt=json HTTP/1.1" 200 None
+2024-07-05 18:29:31,268 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-07-05 18:29:31,506 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p17-266629715507-f6d5b1fd-ca87-409d-ba2c-d6db2783aec3?alt=json HTTP/1.1" 200 None
+2024-07-05 18:29:34,016 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-07-05 18:29:34,216 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p17-266629715507-f6d5b1fd-ca87-409d-ba2c-d6db2783aec3?alt=json HTTP/1.1" 200 None
+2024-07-05 18:29:36,883 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-07-05 18:29:37,109 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p17-266629715507-f6d5b1fd-ca87-409d-ba2c-d6db2783aec3?alt=json HTTP/1.1" 200 None
+2024-07-05 18:29:40,199 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-07-05 18:29:40,376 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p17-266629715507-f6d5b1fd-ca87-409d-ba2c-d6db2783aec3?alt=json HTTP/1.1" 200 None
+2024-07-05 18:29:40,379 DEBUG    root            (gcloud.services.disable) The operation "operations/acf.p17-266629715507-f6d5b1fd-ca87-409d-ba2c-d6db2783aec3" resulted in a failure "[Error in service 'compute.googleapis.com': Could not turn off service, as it still has resources in use.
+Help Token: AbBK4NpcP2wPdYecfOAQaofvnlHU3q_Q8Od-HeNBJao4pk9UL0MMDNZkoOKtNG_e3_972IfFONbmDSRsjPH-21eNBRZ1nE4zsvhFOMWEWAqtkRwl] with failed services [compute.googleapis.com]".
+Details: "[<DetailsValueListEntry
+ additionalProperties: [<AdditionalProperty
+ key: '@type'
+ value: <JsonValue
+ string_value: 'type.googleapis.com/google.rpc.PreconditionFailure'>>, <AdditionalProperty
+ key: 'violations'
+ value: <JsonValue
+ array_value: <JsonArray
+ entries: [<JsonValue
+ object_value: <JsonObject
+ properties: [<Property
+ key: 'type'
+ value: <JsonValue
+ string_value: 'googleapis.com'>>, <Property
+ key: 'subject'
+ value: <JsonValue
+ string_value: '?error_code=160008&service=compute.googleapis.com'>>]>>]>>>]>]".
+Traceback (most recent call last):
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/surface/services/disable.py", line 243, in Run
+    services_util.PrintOperation(op)
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/services/services_util.py", line 133, in PrintOperation
+    raise exceptions.OperationErrorException(
+googlecloudsdk.api_lib.services.exceptions.OperationErrorException: The operation "operations/acf.p17-266629715507-f6d5b1fd-ca87-409d-ba2c-d6db2783aec3" resulted in a failure "[Error in service 'compute.googleapis.com': Could not turn off service, as it still has resources in use.
+Help Token: AbBK4NpcP2wPdYecfOAQaofvnlHU3q_Q8Od-HeNBJao4pk9UL0MMDNZkoOKtNG_e3_972IfFONbmDSRsjPH-21eNBRZ1nE4zsvhFOMWEWAqtkRwl] with failed services [compute.googleapis.com]".
+Details: "[<DetailsValueListEntry
+ additionalProperties: [<AdditionalProperty
+ key: '@type'
+ value: <JsonValue
+ string_value: 'type.googleapis.com/google.rpc.PreconditionFailure'>>, <AdditionalProperty
+ key: 'violations'
+ value: <JsonValue
+ array_value: <JsonArray
+ entries: [<JsonValue
+ object_value: <JsonObject
+ properties: [<Property
+ key: 'type'
+ value: <JsonValue
+ string_value: 'googleapis.com'>>, <Property
+ key: 'subject'
+ value: <JsonValue
+ string_value: '?error_code=160008&service=compute.googleapis.com'>>]>>]>>>]>]".
+2024-07-05 18:29:40,382 ERROR    root            (gcloud.services.disable) The operation "operations/acf.p17-266629715507-f6d5b1fd-ca87-409d-ba2c-d6db2783aec3" resulted in a failure "[Error in service 'compute.googleapis.com': Could not turn off service, as it still has resources in use.
+Help Token: AbBK4NpcP2wPdYecfOAQaofvnlHU3q_Q8Od-HeNBJao4pk9UL0MMDNZkoOKtNG_e3_972IfFONbmDSRsjPH-21eNBRZ1nE4zsvhFOMWEWAqtkRwl] with failed services [compute.googleapis.com]".
+Details: "[<DetailsValueListEntry
+ additionalProperties: [<AdditionalProperty
+ key: '@type'
+ value: <JsonValue
+ string_value: 'type.googleapis.com/google.rpc.PreconditionFailure'>>, <AdditionalProperty
+ key: 'violations'
+ value: <JsonValue
+ array_value: <JsonArray
+ entries: [<JsonValue
+ object_value: <JsonObject
+ properties: [<Property
+ key: 'type'
+ value: <JsonValue
+ string_value: 'googleapis.com'>>, <Property
+ key: 'subject'
+ value: <JsonValue
+ string_value: '?error_code=160008&service=compute.googleapis.com'>>]>>]>>>]>]".

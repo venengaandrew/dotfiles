@@ -1,0 +1,17 @@
+2024-07-05 17:22:10,415 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-07-05 17:22:10,416 ERROR    root            (gcloud.projects) Command name argument expected.
+2024-07-05 17:22:10,419 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'create']
+2024-07-05 17:22:10,430 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_ancestors']
+2024-07-05 17:22:10,434 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'set_iam_policy']
+2024-07-05 17:22:10,436 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'delete']
+2024-07-05 17:22:10,436 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2024-07-05 17:22:10,437 DEBUG    root            No implementation for release track [GA] for element: [/Users/avenenga/Downloads/google-cloud-sdk/lib/surface/projects/move]
+2024-07-05 17:22:10,437 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'undelete']
+2024-07-05 17:22:10,438 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_ancestors_iam_policy']
+2024-07-05 17:22:10,438 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2024-07-05 17:22:10,442 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'remove_iam_policy_binding']
+2024-07-05 17:22:10,443 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'update']
+2024-07-05 17:22:10,444 DEBUG    root            No implementation for release track [GA] for element: [/Users/avenenga/Downloads/google-cloud-sdk/lib/surface/projects/search]
+2024-07-05 17:22:10,445 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_iam_policy']
+2024-07-05 17:22:10,448 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'add_iam_policy_binding']
+2024-07-05 17:22:10,449 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)

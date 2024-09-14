@@ -1,0 +1,161 @@
+2024-07-05 17:19:05,043 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2024-07-05 17:19:05,044 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'install']
+2024-07-05 17:19:05,045 DEBUG    root            Running [gcloud.components.install] with arguments: [COMPONENT-IDS:1: "['log-streaming']"]
+2024-07-05 17:19:05,057 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-07-05 17:19:05,246 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-v483.0.0.json HTTP/1.1" 200 222658
+2024-07-05 17:19:05,364 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:19:05,369 INFO     ___FILE_ONLY___ 
+Your current Google Cloud CLI version is: 483.0.0
+
+2024-07-05 17:19:05,369 INFO     ___FILE_ONLY___ Installing components from version: 483.0.0
+
+2024-07-05 17:19:05,369 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:19:05,370 DEBUG    root            Chosen display Format:table[box,title="These components will be removed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-07-05 17:19:05,370 DEBUG    root            Chosen display Format:table[box,title="These components will be updated."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-07-05 17:19:05,371 DEBUG    root            Chosen display Format:table[box,title="These components will be installed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ ┌────────────────────────────────────────────────────────────────────────┐
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ │                  These components will be installed.                   │
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ ├───────────────────────────┬─────────────────────┬──────────────────────┤
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ │            Name           │       Version       │         Size         │
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ ├───────────────────────────┼─────────────────────┼──────────────────────┤
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ │ 
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ Log Streaming            
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___  
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ │ 
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___               0.3.0
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___  
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ │ 
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___             11.9 MiB
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___  
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ │
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ └───────────────────────────┴─────────────────────┴──────────────────────┘
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:19:05,406 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:19:05,410 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-07-05 17:19:05,791 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/RELEASE_NOTES HTTP/1.1" 200 1238234
+2024-07-05 17:19:06,016 INFO     ___FILE_ONLY___ For the latest full release notes, please visit:
+  https://cloud.google.com/sdk/release_notes
+
+
+2024-07-05 17:19:08,429 INFO     ___FILE_ONLY___ Performing in place update...
+
+
+2024-07-05 17:19:08,443 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-07-05 17:19:08,443 INFO     ___FILE_ONLY___ ╠═ Downloading: Log Streaming                               ═╣
+
+2024-07-05 17:19:08,443 INFO     ___FILE_ONLY___ ╚
+2024-07-05 17:19:08,462 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-07-05 17:19:08,721 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-log-streaming-darwin-arm-20221028134157.tar.gz HTTP/1.1" 200 12455711
+2024-07-05 17:19:09,235 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,236 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,236 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,236 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,236 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,237 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,237 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,238 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,238 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,239 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,240 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,240 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,241 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,243 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,243 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,244 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,244 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,245 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,246 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,248 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,248 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,248 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,249 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,249 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,250 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,250 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,251 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,251 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,252 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,253 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,253 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,254 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,255 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,255 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,256 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,256 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,256 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,257 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,257 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,257 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,258 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,259 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,259 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,259 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,259 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,259 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,260 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,260 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,260 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,260 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,260 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,260 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,261 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,261 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,261 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,261 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,261 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,262 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,262 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,262 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:19:09,262 INFO     ___FILE_ONLY___ ╝
+2024-07-05 17:19:09,262 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2024-07-05 17:19:09,262 INFO     ___FILE_ONLY___ ╠═ Downloading: Log Streaming                               ═╣
+
+2024-07-05 17:19:09,262 INFO     ___FILE_ONLY___ ╚
+2024-07-05 17:19:09,262 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-07-05 17:19:09,262 INFO     ___FILE_ONLY___ ╝
+2024-07-05 17:19:09,263 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2024-07-05 17:19:09,263 INFO     ___FILE_ONLY___ ╠═ Installing: Log Streaming                                ═╣
+
+2024-07-05 17:19:09,263 INFO     ___FILE_ONLY___ ╚
+2024-07-05 17:19:09,404 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-07-05 17:19:09,404 INFO     ___FILE_ONLY___ ╝
+2024-07-05 17:19:09,407 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2024-07-05 17:19:09,408 INFO     ___FILE_ONLY___ ╠═ Installing: Log Streaming                                ═╣
+
+2024-07-05 17:19:09,408 INFO     ___FILE_ONLY___ ╚
+2024-07-05 17:19:09,409 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-07-05 17:19:09,409 INFO     ___FILE_ONLY___ ╝
+
+2024-07-05 17:19:09,416 DEBUG    root            Updating notification cache...
+2024-07-05 17:19:09,417 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:19:09,417 INFO     ___FILE_ONLY___ Performing post processing steps...
+2024-07-05 17:19:09,417 DEBUG    root            Executing command: ['/Users/avenenga/Downloads/google-cloud-sdk/bin/gcloud', 'components', 'post-process']
+2024-07-05 17:19:14,745 DEBUG    ___FILE_ONLY___ 
+2024-07-05 17:19:14,745 DEBUG    ___FILE_ONLY___ 
+2024-07-05 17:19:14,983 INFO     ___FILE_ONLY___ 
+Update done!
+
+
+2024-07-05 17:19:14,992 DEBUG    root            Chosen display Format:none
+2024-07-05 17:19:14,993 INFO     root            Display format: "none"

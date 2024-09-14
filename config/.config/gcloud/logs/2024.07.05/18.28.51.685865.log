@@ -1,0 +1,6 @@
+2024-07-05 18:28:51,686 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2024-07-05 18:28:51,692 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'disable']
+2024-07-05 18:28:51,693 ERROR    root            (gcloud.services.disable) unrecognized arguments: --disable_dependent_services=true 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS

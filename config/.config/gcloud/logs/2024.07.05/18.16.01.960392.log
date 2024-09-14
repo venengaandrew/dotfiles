@@ -1,0 +1,71 @@
+2024-07-05 18:16:01,961 DEBUG    root            Loaded Command Group: ['gcloud', 'run']
+2024-07-05 18:16:02,076 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'deploy']
+2024-07-05 18:16:02,087 DEBUG    root            Running [gcloud.run.deploy] with arguments: [--allow-unauthenticated: "True", --image: "gcr.io/crawler-storage-core/supabase-listener:latest", --platform: "managed", --region: "us-central1", --service-account: "supabase-n8n-listener-2@crawler-storage-core.iam.gserviceaccount.com", SERVICE: "supabase-listener"]
+2024-07-05 18:16:02,151 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-07-05 18:16:02,518 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/crawler-storage-core/services/run.googleapis.com?alt=json HTTP/1.1" 200 None
+2024-07-05 18:16:02,590 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): us-central1-run.googleapis.com:443
+2024-07-05 18:16:02,910 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/crawler-storage-core/services/supabase-listener?alt=json HTTP/1.1" 200 None
+2024-07-05 18:16:02,915 INFO     ___FILE_ONLY___ Deploying container to Cloud Run service [[1msupabase-listener[m] in project [[1mcrawler-storage-core[m] region [[1mus-central1[m]
+
+2024-07-05 18:16:02,915 INFO     ___FILE_ONLY___ Deploying...
+2024-07-05 18:16:02,919 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): us-central1-run.googleapis.com:443
+2024-07-05 18:16:03,268 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "PUT /apis/serving.knative.dev/v1/namespaces/crawler-storage-core/services/supabase-listener?alt=json HTTP/1.1" 200 None
+2024-07-05 18:16:03,319 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): run.googleapis.com:443
+2024-07-05 18:16:03,604 DEBUG    urllib3.connectionpool https://run.googleapis.com:443 "GET /v1/projects/crawler-storage-core/locations/us-central1/services/supabase-listener:getIamPolicy?alt=json HTTP/1.1" 200 None
+2024-07-05 18:16:03,611 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): run.googleapis.com:443
+2024-07-05 18:16:03,957 DEBUG    urllib3.connectionpool https://run.googleapis.com:443 "POST /v1/projects/crawler-storage-core/locations/us-central1/services/supabase-listener:setIamPolicy?alt=json HTTP/1.1" 200 None
+2024-07-05 18:16:03,961 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): us-central1-run.googleapis.com:443
+2024-07-05 18:16:09,010 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "POST /v1/projects/crawler-storage-core/locations/us-central1/operations/698c5488-de4f-447a-965d-ca1772df64e7:wait?alt=json HTTP/1.1" 200 None
+2024-07-05 18:16:09,034 DEBUG    root            (gcloud.run.deploy) Revision 'supabase-listener-00010-pxf' is not ready and cannot serve traffic. The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable. Logs for this revision might contain more information.
+
+Logs URL: https://console.cloud.google.com/logs/viewer?project=crawler-storage-core&resource=cloud_run_revision/service_name/supabase-listener/revision_name/supabase-listener-00010-pxf&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22supabase-listener%22%0Aresource.labels.revision_name%3D%22supabase-listener-00010-pxf%22 
+For more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start
+Traceback (most recent call last):
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/surface/run/deploy.py", line 491, in Run
+    service = operations.ReleaseService(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/run/serverless_operations.py", line 883, in ReleaseService
+    self.WaitForCondition(poller)
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/run/serverless_operations.py", line 273, in WaitForCondition
+    return waiter.PollUntilDone(poller, None, wait_ceiling_ms=1000)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/waiter.py", line 322, in PollUntilDone
+    operation = retryer.RetryOnResult(
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 239, in RetryOnResult
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/run/op_pollers.py", line 147, in Poll
+    conditions = self.GetConditions()
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/run/op_pollers.py", line 278, in GetConditions
+    resource = self._resource_getter()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/run/serverless_operations.py", line 358, in WaitService
+    operation = waiter.PollUntilDone(poller, op_ref)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/waiter.py", line 322, in PollUntilDone
+    operation = retryer.RetryOnResult(
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 249, in RetryOnResult
+    if not should_retry(result, state):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/waiter.py", line 320, in _IsNotDone
+    return not poller.IsDone(operation)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/waiter.py", line 122, in IsDone
+    raise OperationError(operation.error.message)
+googlecloudsdk.api_lib.util.waiter.OperationError: Revision 'supabase-listener-00010-pxf' is not ready and cannot serve traffic. The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable. Logs for this revision might contain more information.
+
+Logs URL: https://console.cloud.google.com/logs/viewer?project=crawler-storage-core&resource=cloud_run_revision/service_name/supabase-listener/revision_name/supabase-listener-00010-pxf&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22supabase-listener%22%0Aresource.labels.revision_name%3D%22supabase-listener-00010-pxf%22 
+For more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start
+2024-07-05 18:16:09,040 ERROR    root            (gcloud.run.deploy) Revision 'supabase-listener-00010-pxf' is not ready and cannot serve traffic. The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable. Logs for this revision might contain more information.
+
+Logs URL: https://console.cloud.google.com/logs/viewer?project=crawler-storage-core&resource=cloud_run_revision/service_name/supabase-listener/revision_name/supabase-listener-00010-pxf&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22supabase-listener%22%0Aresource.labels.revision_name%3D%22supabase-listener-00010-pxf%22 
+For more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start

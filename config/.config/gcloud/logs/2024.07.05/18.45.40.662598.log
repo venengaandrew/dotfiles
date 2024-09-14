@@ -1,0 +1,12 @@
+2024-07-05 18:45:40,687 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds']
+2024-07-05 18:45:40,688 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers']
+2024-07-05 18:45:40,689 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'create']
+2024-07-05 18:45:40,691 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'create', 'github']
+2024-07-05 18:45:40,692 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2024-07-05 18:45:40,693 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'triggers']
+2024-07-05 18:45:40,693 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'triggers', 'create']
+2024-07-05 18:45:40,693 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'triggers', 'create', 'github']
+2024-07-05 18:45:40,694 ERROR    root            (gcloud.beta.builds.triggers.create.github) unrecognized arguments: --logs-bucket=gs://cloud-build-logs/ (did you mean '--log-http'?) 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS

@@ -1,0 +1,19 @@
+2024-07-05 17:22:43,245 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2024-07-05 17:22:43,246 DEBUG    root            Running [gcloud.init] with arguments: []
+2024-07-05 17:22:43,246 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2024-07-05 17:22:43,246 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2024-07-05 17:22:43,248 INFO     ___FILE_ONLY___ core:
+  account: andrew@aelieve.it
+  disable_usage_reporting: 'True'
+  project: crawler-storage-core
+
+2024-07-05 17:22:43,248 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:22:51,586 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

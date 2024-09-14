@@ -1,0 +1,123 @@
+2024-07-05 18:28:02,335 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2024-07-05 18:28:02,341 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'disable']
+2024-07-05 18:28:02,341 DEBUG    root            Running [gcloud.services.disable] with arguments: [SERVICE:1: "['compute.googleapis.com']"]
+2024-07-05 18:28:02,415 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-07-05 18:28:02,887 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/crawler-storage-core/services/compute.googleapis.com:disable?alt=json HTTP/1.1" 400 None
+2024-07-05 18:28:02,889 INFO     ___FILE_ONLY___ Provide the --force flag if you wish to force disable services.
+
+2024-07-05 18:28:02,890 DEBUG    root            Chosen display Format:default
+2024-07-05 18:28:02,935 DEBUG    root            Chosen display Format:default
+2024-07-05 18:28:02,931 DEBUG    root            (gcloud.services.disable) FAILED_PRECONDITION: The service compute.googleapis.com is depended on by the following active service(s): container.googleapis.com,dataflow.googleapis.com,datafusion.googleapis.com,dataproc-control.googleapis.com,dataproc.googleapis.com,notebooks.googleapis.com,osconfig.googleapis.com,workloadmanager.googleapis.com,workstations.googleapis.com; Please specify disable_dependent_services=true if you want to proceed with disabling all services.
+Help Token: ARZIt87KISsKW9guWbmrWAA7I_bBm2Fjc-s5W_oa7M529oJ0WJkPHOuCiUYIXtffUWDGhosUf7AyUix1FdWhu_KJmvGqLWOhGmtitIrHlIz2HGjv
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: ?error_code=100001&service_name=compute.googleapis.com&services=container.googleapis.com&services=dataflow.googleapis.com&services=datafusion.googleapis.com&services=dataproc-control.googleapis.com&services=dataproc.googleapis.com&services=notebooks.googleapis.com&services=osconfig.googleapis.com&services=workloadmanager.googleapis.com&services=workstations.googleapis.com
+    type: googleapis.com
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: serviceusage.googleapis.com
+  metadata:
+    service_name: compute.googleapis.com
+    services: container.googleapis.com,dataflow.googleapis.com,datafusion.googleapis.com,dataproc-control.googleapis.com,dataproc.googleapis.com,notebooks.googleapis.com,osconfig.googleapis.com,workloadmanager.googleapis.com,workstations.googleapis.com
+  reason: COMMON_SU_SERVICE_HAS_DEPENDENT_SERVICES
+Traceback (most recent call last):
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/services/serviceusage.py", line 734, in DisableApiCall
+    return client.services.Disable(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/serviceusage/v1/serviceusage_v1_client.py", line 236, in Disable
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://serviceusage.googleapis.com/v1/projects/crawler-storage-core/services/compute.googleapis.com:disable?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Fri, 05 Jul 2024 23:28:02 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "The service compute.googleapis.com is depended on by the following active service(s): container.googleapis.com,dataflow.googleapis.com,datafusion.googleapis.com,dataproc-control.googleapis.com,dataproc.googleapis.com,notebooks.googleapis.com,osconfig.googleapis.com,workloadmanager.googleapis.com,workstations.googleapis.com; Please specify disable_dependent_services=true if you want to proceed with disabling all services.\nHelp Token: ARZIt87KISsKW9guWbmrWAA7I_bBm2Fjc-s5W_oa7M529oJ0WJkPHOuCiUYIXtffUWDGhosUf7AyUix1FdWhu_KJmvGqLWOhGmtitIrHlIz2HGjv",
+    "status": "FAILED_PRECONDITION",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+        "violations": [
+          {
+            "type": "googleapis.com",
+            "subject": "?error_code=100001&service_name=compute.googleapis.com&services=container.googleapis.com&services=dataflow.googleapis.com&services=datafusion.googleapis.com&services=dataproc-control.googleapis.com&services=dataproc.googleapis.com&services=notebooks.googleapis.com&services=osconfig.googleapis.com&services=workloadmanager.googleapis.com&services=workstations.googleapis.com"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "COMMON_SU_SERVICE_HAS_DEPENDENT_SERVICES",
+        "domain": "serviceusage.googleapis.com",
+        "metadata": {
+          "service_name": "compute.googleapis.com",
+          "services": "container.googleapis.com,dataflow.googleapis.com,datafusion.googleapis.com,dataproc-control.googleapis.com,dataproc.googleapis.com,notebooks.googleapis.com,osconfig.googleapis.com,workloadmanager.googleapis.com,workstations.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/surface/services/disable.py", line 231, in Run
+    op = serviceusage.DisableApiCall(project, service_name, args.force)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/services/serviceusage.py", line 742, in DisableApiCall
+    exceptions.ReraiseError(e, exceptions.Error)
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/services/exceptions.py", line 158, in ReraiseError
+    core_exceptions.reraise(klass(api_lib_exceptions.HttpException(err)))
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 149, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/third_party/six/__init__.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/services/serviceusage.py", line 734, in DisableApiCall
+    return client.services.Disable(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/serviceusage/v1/serviceusage_v1_client.py", line 236, in Disable
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+googlecloudsdk.api_lib.services.exceptions.Error: FAILED_PRECONDITION: The service compute.googleapis.com is depended on by the following active service(s): container.googleapis.com,dataflow.googleapis.com,datafusion.googleapis.com,dataproc-control.googleapis.com,dataproc.googleapis.com,notebooks.googleapis.com,osconfig.googleapis.com,workloadmanager.googleapis.com,workstations.googleapis.com; Please specify disable_dependent_services=true if you want to proceed with disabling all services.
+Help Token: ARZIt87KISsKW9guWbmrWAA7I_bBm2Fjc-s5W_oa7M529oJ0WJkPHOuCiUYIXtffUWDGhosUf7AyUix1FdWhu_KJmvGqLWOhGmtitIrHlIz2HGjv
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: ?error_code=100001&service_name=compute.googleapis.com&services=container.googleapis.com&services=dataflow.googleapis.com&services=datafusion.googleapis.com&services=dataproc-control.googleapis.com&services=dataproc.googleapis.com&services=notebooks.googleapis.com&services=osconfig.googleapis.com&services=workloadmanager.googleapis.com&services=workstations.googleapis.com
+    type: googleapis.com
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: serviceusage.googleapis.com
+  metadata:
+    service_name: compute.googleapis.com
+    services: container.googleapis.com,dataflow.googleapis.com,datafusion.googleapis.com,dataproc-control.googleapis.com,dataproc.googleapis.com,notebooks.googleapis.com,osconfig.googleapis.com,workloadmanager.googleapis.com,workstations.googleapis.com
+  reason: COMMON_SU_SERVICE_HAS_DEPENDENT_SERVICES
+2024-07-05 18:28:02,937 ERROR    root            (gcloud.services.disable) FAILED_PRECONDITION: The service compute.googleapis.com is depended on by the following active service(s): container.googleapis.com,dataflow.googleapis.com,datafusion.googleapis.com,dataproc-control.googleapis.com,dataproc.googleapis.com,notebooks.googleapis.com,osconfig.googleapis.com,workloadmanager.googleapis.com,workstations.googleapis.com; Please specify disable_dependent_services=true if you want to proceed with disabling all services.
+Help Token: ARZIt87KISsKW9guWbmrWAA7I_bBm2Fjc-s5W_oa7M529oJ0WJkPHOuCiUYIXtffUWDGhosUf7AyUix1FdWhu_KJmvGqLWOhGmtitIrHlIz2HGjv
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: ?error_code=100001&service_name=compute.googleapis.com&services=container.googleapis.com&services=dataflow.googleapis.com&services=datafusion.googleapis.com&services=dataproc-control.googleapis.com&services=dataproc.googleapis.com&services=notebooks.googleapis.com&services=osconfig.googleapis.com&services=workloadmanager.googleapis.com&services=workstations.googleapis.com
+    type: googleapis.com
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: serviceusage.googleapis.com
+  metadata:
+    service_name: compute.googleapis.com
+    services: container.googleapis.com,dataflow.googleapis.com,datafusion.googleapis.com,dataproc-control.googleapis.com,dataproc.googleapis.com,notebooks.googleapis.com,osconfig.googleapis.com,workloadmanager.googleapis.com,workstations.googleapis.com
+  reason: COMMON_SU_SERVICE_HAS_DEPENDENT_SERVICES

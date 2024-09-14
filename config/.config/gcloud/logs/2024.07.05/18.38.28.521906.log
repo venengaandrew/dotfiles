@@ -1,0 +1,38 @@
+2024-07-05 18:38:28,549 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds']
+2024-07-05 18:38:28,550 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers']
+2024-07-05 18:38:28,551 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'create']
+2024-07-05 18:38:28,554 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'create', 'github']
+2024-07-05 18:38:28,557 DEBUG    root            Running [gcloud.beta.builds.triggers.create.github] with arguments: [--branch-pattern: "^main$", --build-config: "Dockerfile", --name: "cloud-run-cd-trigger", --repo-name: "supabase-n8n-listener", --repo-owner: "aelieve-it", --service-account: "supabase-n8n-listener-2@crawler-storage-core.iam.gserviceaccount.com", --substitutions: "OrderedDict([('_IMAGE', 'gcr.io/crawler-storage-core/supabase-listener')])"]
+2024-07-05 18:38:28,661 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2024-07-05 18:38:28,976 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "POST /v1/projects/crawler-storage-core/locations/global/triggers?alt=json HTTP/1.1" 400 None
+2024-07-05 18:38:28,980 DEBUG    root            (gcloud.beta.builds.triggers.create.github) INVALID_ARGUMENT: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/surface/builds/triggers/create/github.py", line 189, in Run
+    created_trigger = client.projects_locations_triggers.Create(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/cloudbuild/v1/cloudbuild_v1_client.py", line 2129, in Create
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://cloudbuild.googleapis.com/v1/projects/crawler-storage-core/locations/global/triggers?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Fri, 05 Jul 2024 23:38:29 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+>
+2024-07-05 18:38:28,985 ERROR    root            (gcloud.beta.builds.triggers.create.github) INVALID_ARGUMENT: Request contains an invalid argument.

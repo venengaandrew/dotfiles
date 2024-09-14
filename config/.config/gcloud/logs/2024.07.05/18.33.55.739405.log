@@ -1,0 +1,14 @@
+2024-07-05 18:33:55,762 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds']
+2024-07-05 18:33:55,763 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers']
+2024-07-05 18:33:55,765 ERROR    root            (gcloud.beta.builds.triggers) Command name argument expected.
+2024-07-05 18:33:55,765 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'update']
+2024-07-05 18:33:55,766 DEBUG    root            No implementation for release track [BETA] for element: [/Users/avenenga/Downloads/google-cloud-sdk/lib/surface/builds/triggers/config]
+2024-07-05 18:33:55,770 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'delete']
+2024-07-05 18:33:55,774 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'import']
+2024-07-05 18:33:55,775 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'create']
+2024-07-05 18:33:55,776 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'export']
+2024-07-05 18:33:55,777 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'describe']
+2024-07-05 18:33:55,778 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'list']
+2024-07-05 18:33:55,779 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'run']
+2024-07-05 18:33:55,781 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)
+2024-07-05 18:33:55,798 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)

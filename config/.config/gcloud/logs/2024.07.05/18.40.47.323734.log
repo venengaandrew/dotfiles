@@ -1,0 +1,35 @@
+2024-07-05 18:40:47,358 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds']
+2024-07-05 18:40:47,359 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers']
+2024-07-05 18:40:47,360 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'create']
+2024-07-05 18:40:47,364 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'create', 'github']
+2024-07-05 18:40:47,367 DEBUG    root            Running [gcloud.beta.builds.triggers.create.github] with arguments: [--branch-pattern: "^main$", --build-config: "Dockerfile", --name: "cloud-run-cd-trigger", --repo-name: "supabase-n8n-listener", --repo-owner: "Aelieve-IT"]
+2024-07-05 18:40:47,397 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2024-07-05 18:40:48,133 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "POST /v1/projects/crawler-storage-core/locations/global/triggers?alt=json HTTP/1.1" 200 None
+2024-07-05 18:40:48,137 INFO     ___FILE_ONLY___ Created [https://cloudbuild.googleapis.com/v1/projects/crawler-storage-core/locations/global/triggers/845a7986-1db3-4d49-9b80-8f854df311e8].
+
+2024-07-05 18:40:48,137 DEBUG    root            Chosen display Format:
+          table(
+            name,
+            createTime.date('%Y-%m-%dT%H:%M:%S%Oz', undefined='-'),
+            status
+          )
+        
+2024-07-05 18:40:48,137 INFO     root            Display format: "
+          table(
+            name,
+            createTime.date('%Y-%m-%dT%H:%M:%S%Oz', undefined='-'),
+            status
+          )
+        "
+2024-07-05 18:40:48,167 INFO     ___FILE_ONLY___ NAME
+2024-07-05 18:40:48,167 INFO     ___FILE_ONLY___                   
+2024-07-05 18:40:48,167 INFO     ___FILE_ONLY___ CREATE_TIME
+2024-07-05 18:40:48,167 INFO     ___FILE_ONLY___                 
+2024-07-05 18:40:48,167 INFO     ___FILE_ONLY___ STATUS
+2024-07-05 18:40:48,167 INFO     ___FILE_ONLY___ 
+
+2024-07-05 18:40:48,167 INFO     ___FILE_ONLY___ cloud-run-cd-trigger
+2024-07-05 18:40:48,167 INFO     ___FILE_ONLY___   
+2024-07-05 18:40:48,167 INFO     ___FILE_ONLY___ 2024-07-05T23:40:48+00:00
+2024-07-05 18:40:48,167 INFO     ___FILE_ONLY___ 
+

@@ -1,0 +1,9 @@
+2024-07-05 17:21:50,893 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-07-05 17:21:50,927 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2024-07-05 17:21:50,928 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "crawler-storage-core"]
+2024-07-05 17:21:51,000 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-07-05 17:21:51,292 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/crawler-storage-core?alt=json HTTP/1.1" 200 None
+2024-07-05 17:21:51,297 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2024-07-05 17:21:51,298 DEBUG    root            Chosen display Format:default
+2024-07-05 17:21:51,298 INFO     root            Display format: "default"

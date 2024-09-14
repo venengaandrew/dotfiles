@@ -1,0 +1,161 @@
+2024-07-05 17:20:18,381 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2024-07-05 17:20:18,382 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'install']
+2024-07-05 17:20:18,383 DEBUG    root            Running [gcloud.components.install] with arguments: [COMPONENT-IDS:1: "['docker-credential-gcr']"]
+2024-07-05 17:20:18,394 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-07-05 17:20:18,530 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-v483.0.0.json HTTP/1.1" 200 222658
+2024-07-05 17:20:18,655 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:20:18,657 INFO     ___FILE_ONLY___ 
+Your current Google Cloud CLI version is: 483.0.0
+
+2024-07-05 17:20:18,657 INFO     ___FILE_ONLY___ Installing components from version: 483.0.0
+
+2024-07-05 17:20:18,657 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:20:18,657 DEBUG    root            Chosen display Format:table[box,title="These components will be removed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-07-05 17:20:18,658 DEBUG    root            Chosen display Format:table[box,title="These components will be updated."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-07-05 17:20:18,658 DEBUG    root            Chosen display Format:table[box,title="These components will be installed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-07-05 17:20:18,687 INFO     ___FILE_ONLY___ ┌──────────────────────────────────────────────────────────────────────────┐
+2024-07-05 17:20:18,687 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:20:18,687 INFO     ___FILE_ONLY___ │                   These components will be installed.                    │
+2024-07-05 17:20:18,687 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:20:18,687 INFO     ___FILE_ONLY___ ├──────────────────────────────────────────────────────┬─────────┬─────────┤
+2024-07-05 17:20:18,687 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ │                         Name                         │ Version │   Size  │
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ ├──────────────────────────────────────────────────────┼─────────┼─────────┤
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ │ 
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ Google Container Registry's Docker credential helper
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___  
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ │ 
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___   1.5.0
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___  
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ │ 
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ 2.2 MiB
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___  
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ │
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ └──────────────────────────────────────────────────────┴─────────┴─────────┘
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:20:18,688 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:20:18,691 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-07-05 17:20:18,837 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/RELEASE_NOTES HTTP/1.1" 200 1238234
+2024-07-05 17:20:19,061 INFO     ___FILE_ONLY___ For the latest full release notes, please visit:
+  https://cloud.google.com/sdk/release_notes
+
+
+2024-07-05 17:20:20,315 INFO     ___FILE_ONLY___ Performing in place update...
+
+
+2024-07-05 17:20:20,327 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-07-05 17:20:20,327 INFO     ___FILE_ONLY___ ╠═ Downloading: Google Container Registry's Docker crede... ═╣
+
+2024-07-05 17:20:20,327 INFO     ___FILE_ONLY___ ╚
+2024-07-05 17:20:20,327 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-07-05 17:20:20,328 INFO     ___FILE_ONLY___ ╝
+2024-07-05 17:20:20,328 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2024-07-05 17:20:20,328 INFO     ___FILE_ONLY___ ╠═ Downloading: Google Container Registry's Docker crede... ═╣
+
+2024-07-05 17:20:20,328 INFO     ___FILE_ONLY___ ╚
+2024-07-05 17:20:20,338 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-07-05 17:20:20,645 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-docker-credential-gcr-darwin-x86_64-20210205155736.tar.gz HTTP/1.1" 200 2266831
+2024-07-05 17:20:20,959 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,960 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,960 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,960 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,960 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,960 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,960 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,960 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,960 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,961 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,961 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,961 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,961 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,961 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,961 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,961 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,961 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,961 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,961 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,962 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,962 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,962 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,962 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,962 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,962 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,962 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,962 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,962 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,962 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,963 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,963 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,963 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,963 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,963 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,963 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,963 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,963 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,964 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,964 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,964 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,964 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,964 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,964 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,964 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,964 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,964 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,964 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,965 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,965 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,965 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,965 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,965 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,965 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,965 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,965 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,965 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,965 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,965 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,966 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,966 INFO     ___FILE_ONLY___ ═
+2024-07-05 17:20:20,966 INFO     ___FILE_ONLY___ ╝
+2024-07-05 17:20:20,967 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2024-07-05 17:20:20,967 INFO     ___FILE_ONLY___ ╠═ Installing: Google Container Registry's Docker creden... ═╣
+
+2024-07-05 17:20:20,967 INFO     ___FILE_ONLY___ ╚
+2024-07-05 17:20:20,973 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-07-05 17:20:20,974 INFO     ___FILE_ONLY___ ╝
+2024-07-05 17:20:20,974 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2024-07-05 17:20:20,974 INFO     ___FILE_ONLY___ ╠═ Installing: Google Container Registry's Docker creden... ═╣
+
+2024-07-05 17:20:20,974 INFO     ___FILE_ONLY___ ╚
+2024-07-05 17:20:21,015 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-07-05 17:20:21,015 INFO     ___FILE_ONLY___ ╝
+
+2024-07-05 17:20:21,027 DEBUG    root            Updating notification cache...
+2024-07-05 17:20:21,027 INFO     ___FILE_ONLY___ 
+
+2024-07-05 17:20:21,027 INFO     ___FILE_ONLY___ Performing post processing steps...
+2024-07-05 17:20:21,027 DEBUG    root            Executing command: ['/Users/avenenga/Downloads/google-cloud-sdk/bin/gcloud', 'components', 'post-process']
+2024-07-05 17:20:27,028 DEBUG    ___FILE_ONLY___ 
+2024-07-05 17:20:27,028 DEBUG    ___FILE_ONLY___ 
+2024-07-05 17:20:27,097 INFO     ___FILE_ONLY___ 
+Update done!
+
+
+2024-07-05 17:20:27,101 DEBUG    root            Chosen display Format:none
+2024-07-05 17:20:27,101 INFO     root            Display format: "none"

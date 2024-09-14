@@ -1,0 +1,37 @@
+2024-07-05 18:27:20,994 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2024-07-05 18:27:20,996 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service_accounts']
+2024-07-05 18:27:21,006 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service-accounts', 'create']
+2024-07-05 18:27:21,007 DEBUG    root            Running [gcloud.iam.service-accounts.create] with arguments: [--display-name: "GCloud Default Service Account", NAME: "266629715507-compute@developer.gserviceaccount.com"]
+2024-07-05 18:27:21,071 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-07-05 18:27:21,276 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/projects/crawler-storage-core/serviceAccounts?alt=json HTTP/1.1" 400 None
+2024-07-05 18:27:21,278 DEBUG    root            (gcloud.iam.service-accounts.create) INVALID_ARGUMENT: The account ID "266629715507-compute@developer.gserviceaccount.com" does not have a length between 6 and 30.
+Traceback (most recent call last):
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/surface/iam/service_accounts/create.py", line 74, in Run
+    result = client.projects_serviceAccounts.Create(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/iam/v1/iam_v1_client.py", line 3974, in Create
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/avenenga/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://iam.googleapis.com/v1/projects/crawler-storage-core/serviceAccounts?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Fri, 05 Jul 2024 23:27:21 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "The account ID \"266629715507-compute@developer.gserviceaccount.com\" does not have a length between 6 and 30.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+>
+2024-07-05 18:27:21,282 ERROR    root            (gcloud.iam.service-accounts.create) INVALID_ARGUMENT: The account ID "266629715507-compute@developer.gserviceaccount.com" does not have a length between 6 and 30.

@@ -1,0 +1,93 @@
+2024-07-05 18:33:44,545 INFO     ___FILE_ONLY___ You do not currently have this command group installed.  Using it 
+requires the installation of components: [beta]
+
+2024-07-05 18:33:44,577 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-07-05 18:33:44,753 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-v483.0.0.json HTTP/1.1" 200 222658
+2024-07-05 18:33:44,875 INFO     ___FILE_ONLY___ 
+
+2024-07-05 18:33:44,876 INFO     ___FILE_ONLY___ 
+Your current Google Cloud CLI version is: 483.0.0
+
+2024-07-05 18:33:44,876 INFO     ___FILE_ONLY___ Installing components from version: 483.0.0
+
+2024-07-05 18:33:44,876 INFO     ___FILE_ONLY___ 
+
+2024-07-05 18:33:44,876 DEBUG    root            Chosen display Format:table[box,title="These components will be removed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-07-05 18:33:44,876 DEBUG    root            Chosen display Format:table[box,title="These components will be updated."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-07-05 18:33:44,876 DEBUG    root            Chosen display Format:table[box,title="These components will be installed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ ┌─────────────────────────────────────────────┐
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ 
+
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ │     These components will be installed.     │
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ 
+
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ ├──────────────────────┬────────────┬─────────┤
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ 
+
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ │         Name         │  Version   │   Size  │
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ 
+
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ ├──────────────────────┼────────────┼─────────┤
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ 
+
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ │ 
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ gcloud Beta Commands
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___  
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ │ 
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ 2024.06.28
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___  
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ │ 
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ < 1 MiB
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___  
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ │
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ 
+
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ └──────────────────────┴────────────┴─────────┘
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ 
+
+2024-07-05 18:33:44,908 INFO     ___FILE_ONLY___ 
+
+2024-07-05 18:33:44,912 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-07-05 18:33:45,056 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/RELEASE_NOTES HTTP/1.1" 200 1238234
+2024-07-05 18:33:45,245 INFO     ___FILE_ONLY___ For the latest full release notes, please visit:
+  https://cloud.google.com/sdk/release_notes
+
+
+2024-07-05 18:33:48,987 INFO     ___FILE_ONLY___ Performing in place update...
+
+
+2024-07-05 18:33:49,000 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-07-05 18:33:49,000 INFO     ___FILE_ONLY___ ╠═ Downloading: gcloud Beta Commands                        ═╣
+
+2024-07-05 18:33:49,000 INFO     ___FILE_ONLY___ ╚
+2024-07-05 18:33:49,006 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-07-05 18:33:49,143 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-beta-20240628141907.tar.gz HTTP/1.1" 200 797
+2024-07-05 18:33:49,145 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-07-05 18:33:49,145 INFO     ___FILE_ONLY___ ╝
+2024-07-05 18:33:49,146 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2024-07-05 18:33:49,147 INFO     ___FILE_ONLY___ ╠═ Installing: gcloud Beta Commands                         ═╣
+
+2024-07-05 18:33:49,147 INFO     ___FILE_ONLY___ ╚
+2024-07-05 18:33:49,149 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-07-05 18:33:49,149 INFO     ___FILE_ONLY___ ╝
+
+2024-07-05 18:33:49,160 DEBUG    root            Updating notification cache...
+2024-07-05 18:33:49,160 INFO     ___FILE_ONLY___ 
+
+2024-07-05 18:33:49,160 INFO     ___FILE_ONLY___ Performing post processing steps...
+2024-07-05 18:33:49,161 DEBUG    root            Executing command: ['/Users/avenenga/Downloads/google-cloud-sdk/bin/gcloud', 'components', 'post-process']
+2024-07-05 18:33:55,342 DEBUG    ___FILE_ONLY___ 
+2024-07-05 18:33:55,343 DEBUG    ___FILE_ONLY___ 
+2024-07-05 18:33:55,492 INFO     ___FILE_ONLY___ 
+Update done!
+
+
+2024-07-05 18:33:55,493 INFO     ___FILE_ONLY___ Restarting command:
+  $ gcloud beta builds triggers
+
+
+2024-07-05 18:33:55,493 DEBUG    root            Restarting command: /Users/avenenga/Downloads/google-cloud-sdk/lib/gcloud.py ['/Users/avenenga/dotfiles/config/.config/gcloud/virtenv/bin/python3', '/Users/avenenga/Downloads/google-cloud-sdk/lib/gcloud.py', 'beta', 'builds', 'triggers']
+2024-07-05 18:33:55,493 DEBUG    root            Executing command: ['/Users/avenenga/dotfiles/config/.config/gcloud/virtenv/bin/python3', '/Users/avenenga/Downloads/google-cloud-sdk/lib/gcloud.py', 'beta', 'builds', 'triggers']
+2024-07-05 18:34:07,520 DEBUG    root            Subprocess [4174] got [2]

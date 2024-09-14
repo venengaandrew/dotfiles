@@ -1,0 +1,12 @@
+2024-07-05 18:46:19,107 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds']
+2024-07-05 18:46:19,108 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers']
+2024-07-05 18:46:19,109 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'create']
+2024-07-05 18:46:19,112 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'builds', 'triggers', 'create', 'github']
+2024-07-05 18:46:19,113 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2024-07-05 18:46:19,114 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'triggers']
+2024-07-05 18:46:19,114 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'triggers', 'create']
+2024-07-05 18:46:19,115 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'triggers', 'create', 'github']
+2024-07-05 18:46:19,115 ERROR    root            (gcloud.beta.builds.triggers.create.github) unrecognized arguments: --logging=CLOUD_LOGGING_ONLY 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
