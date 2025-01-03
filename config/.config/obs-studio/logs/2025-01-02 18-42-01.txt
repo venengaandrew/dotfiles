@@ -1,0 +1,102 @@
+18:42:01.559: Platform: Wayland
+18:42:01.559: CPU Name: 12th Gen Intel(R) Core(TM) i5-12400F
+18:42:01.559: CPU Speed: 2619.905MHz
+18:42:01.559: Physical Cores: 6, Logical Cores: 12
+18:42:01.559: Physical Memory: 47957MB Total, 39779MB Free
+18:42:01.559: Kernel Version: Linux 6.8.0-51-generic
+18:42:01.559: Distribution: "Ubuntu" "24.04"
+18:42:01.559: Desktop Environment: ubuntu:GNOME (ubuntu)
+18:42:01.559: Session Type: wayland
+18:42:01.560: Qt Version: 6.4.2 (runtime), 6.4.2 (compiled)
+18:42:01.560: Portable mode: false
+18:42:01.581: OBS 30.0.2.1-3build1 (linux)
+18:42:01.581: ---------------------------------
+18:42:01.581: ---------------------------------
+18:42:01.581: audio settings reset:
+18:42:01.581: 	samples per sec: 48000
+18:42:01.581: 	speakers:        2
+18:42:01.581: 	max buffering:   960 milliseconds
+18:42:01.581: 	buffering type:  dynamically increasing
+18:42:01.582: ---------------------------------
+18:42:01.582: Initializing OpenGL...
+18:42:01.582: Using EGL/Wayland
+18:42:01.604: Initialized EGL 1.5
+18:42:01.614: Loading up OpenGL on adapter AMD Radeon RX Vega (radeonsi, vega10, LLVM 18.1.7, DRM 3.57, 6.8.0-51-generic)
+18:42:01.614: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 24.2.0-devel, shading language 4.60
+18:42:01.710: ---------------------------------
+18:42:01.710: video settings reset:
+18:42:01.710: 	base resolution:   1920x1080
+18:42:01.710: 	output resolution: 1920x1080
+18:42:01.710: 	downscale filter:  Bicubic
+18:42:01.710: 	fps:               60/1
+18:42:01.710: 	format:            NV12
+18:42:01.710: 	YUV mode:          Rec. 709/Partial
+18:42:01.710: NV12 texture support not available
+18:42:01.710: P010 texture support not available
+18:42:01.716: Audio monitoring device:
+18:42:01.716: 	name: Default
+18:42:01.716: 	id: default
+18:42:01.716: ---------------------------------
+18:42:01.722: Failed to load 'en-US' text for module: 'decklink-captions.so'
+18:42:01.727: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+18:42:01.731: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+18:42:01.731: Failed to initialize module 'decklink.so'
+18:42:01.784: [pipewire] Available captures:
+18:42:01.784: [pipewire]     - Desktop capture
+18:42:01.784: [pipewire]     - Window capture
+18:42:01.840: VAAPI: API version 1.20
+18:42:01.851: FFmpeg VAAPI H264 encoding supported
+18:42:01.855: FFmpeg VAAPI HEVC encoding supported
+18:42:01.881: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.3.4 | RPC Version: 1)
+18:42:01.881: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.4.2 | Qt version (run-time): 6.4.2
+18:42:01.881: [obs-websocket] [obs_module_load] Linked ASIO Version: 102801
+18:42:01.885: [obs-websocket] [obs_module_load] Module loaded.
+18:42:01.908: [vlc-video]: VLC 3.0.20 Vetinari found, VLC video source enabled
+18:42:01.908: ---------------------------------
+18:42:01.908:   Loaded Modules:
+18:42:01.908:     vlc-video.so
+18:42:01.908:     text-freetype2.so
+18:42:01.908:     rtmp-services.so
+18:42:01.908:     obs-x264.so
+18:42:01.908:     obs-websocket.so
+18:42:01.908:     obs-transitions.so
+18:42:01.908:     obs-outputs.so
+18:42:01.908:     obs-filters.so
+18:42:01.908:     obs-ffmpeg.so
+18:42:01.908:     linux-v4l2.so
+18:42:01.908:     linux-pulseaudio.so
+18:42:01.908:     linux-pipewire.so
+18:42:01.908:     linux-jack.so
+18:42:01.908:     linux-capture.so
+18:42:01.908:     linux-alsa.so
+18:42:01.908:     image-source.so
+18:42:01.908:     frontend-tools.so
+18:42:01.908:     decklink-output-ui.so
+18:42:01.908:     decklink-captions.so
+18:42:01.908: ---------------------------------
+18:42:01.909: QWidget::setTabOrder: 'first' and 'second' must be in the same window
+18:42:01.909: ==== Startup complete ===============================================
+18:42:01.945: All scene data cleared
+18:42:01.945: ------------------------------------------------
+18:42:01.949: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.5) 15.0.0'
+18:42:01.949: pulse-input: Audio format: s24le, 48000 Hz, 2 channels
+18:42:01.949: pulse-input: Sample format s24le not supported by OBS,using float32le instead for recording
+18:42:01.949: pulse-input: Started recording from 'alsa_output.usb-Elgato_Systems_Elgato_Wave_XLR_DS33K1A05532-00.analog-stereo.monitor' (default)
+18:42:01.949: [Loaded global audio device]: 'Desktop Audio'
+18:42:01.949: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.5) 15.0.0'
+18:42:01.949: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+18:42:01.949: pulse-input: Started recording from 'alsa_input.usb-Focusrite_Scarlett_Solo_USB_Y77JE300493A03-00.analog-stereo' (default)
+18:42:01.950: [Loaded global audio device]: 'Mic/Aux'
+18:42:01.950: Switched to scene 'Scene'
+18:42:01.950: ------------------------------------------------
+18:42:01.950: Loaded scenes:
+18:42:01.950: - scene 'Scene':
+18:42:01.950: ------------------------------------------------
+18:42:02.499: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+18:42:02.499: 
+18:42:02.541: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+18:42:02.541: 
+18:42:03.285:   OpenType support missing for "Open Sans", script 11
+18:42:03.287:   OpenType support missing for "Open Sans", script 12
+18:42:03.290:   OpenType support missing for "Open Sans", script 16
+18:42:03.293:   OpenType support missing for "Open Sans", script 20
