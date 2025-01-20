@@ -103,3 +103,4 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # The next line enables shell command completion for gcloud.
 
+eval $(thefuck --alias)
