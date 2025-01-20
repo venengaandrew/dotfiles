@@ -91,6 +91,7 @@ alias ls='ls --color'
 alias spower='system76-power'
 alias c='clear'
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+alias k='kubectl'
 
 
 # Shell integrations
@@ -98,7 +99,7 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/avenenga/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/avenenga/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+#if [ -f '/Users/avenenga/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/avenenga/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/avenenga/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/avenenga/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+

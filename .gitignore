@@ -6,6 +6,7 @@ config/.config/neofetch/
 config/.config/btop
 config/.config/configstore
 config/.config/flutter
+config/.config/gcloud
 
 config/.config/dconf/
 config/.config/tmux/plugins
