@@ -88,6 +88,8 @@ complete -o nospace -C /usr/bin/terraform terraform
 alias ls='ls --color'
 alias spower='system76-power'
 alias c='clear'
+alias k='kubectl'
+
 
 # Shell integrations
 #eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
