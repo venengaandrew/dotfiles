@@ -11,4 +11,7 @@ config/.config/gcloud
 config/.config/dconf/
 config/.config/tmux/plugins
 
+config/.config/raycast/extensions/
+config/.config/darktable/
+
 tmux/.tmux/plugins
