@@ -7,8 +7,9 @@ fi
 
 #if [[ -f "/opt/homebrew/bin/brew" ]] then
   # If you're using macOS, you'll want this enabled
-#  eval "$(/opt/homebrew/bin/brew shellenv)"
+  #eval "$(/opt/homebrew/bin/brew shellenv)"
 #fi
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
